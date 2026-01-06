@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Makhdoom Clothing</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="index.html" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Simple. Fast. Reliable.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            We provie you a modern clothig like pant coat and etc
+        </p>
+        <p>0323-2183019</p>
+        <p>Sector 1A Lines Area Saddar Karachi</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="product2">
+            <div class="product">
+                <img width="200px" height="200px" src="IMG_72551.jpg" alt="Product Image">
+                <h3>GOLDEN EAGLE</h3>
+                <p>Price: Rs. 2500</p>
+                <button>Buy Now</button>
+            </div >
+            
+            <div class="product">
+                <img width="200px" height="200px" src="OIP (1).jpg" alt="Product Image">
+                <h3>SEGREEN PEARL</h3>
+                <p>Price: Rs. 3500</p>
+                <button>Buy Now</button>
+            </div>
+                 <div class="product">
+                <img width="200px" height="200px" src="OIP (2).jpg" alt="Product Image">
+                <h3>SKY BLUE</h3>
+                <p>Price: Rs. 5000</p>
+                <button>Buy Now</button>
+            </div>
+             <div class="product">
+                <img width="200px" height="200px" src="OIP (3).jpg" alt="Product Image">
+                <h3>PURPLISH</h3>
+                <p>Price: Rs. 6000</p>
+                <button>Buy Now</button>
+            </div>
+               <div class="product">
+                <img width="200px" height="200px" src="OIP.jpg" alt="Product Image">
+                <h3>MUD GREEN</h3>
+                <p>Price: Rs. 7500</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="service-list">
+            <div class="service">CLOTHHIG
+            </div>
+            <div class="service">CONTACT US</div>
+            <div class="service">Tech Support</div>
+        </div>
+    </section>
+
+    <script>
+        if (localStorage.getItem("loggedIn") !== "true") {
+            window.location.href = "index.html";
+        }
+
+        function logout() {
+            localStorage.removeItem("loggedIn");
+        }
+    </script>
+
+</body>
+
+</html>
